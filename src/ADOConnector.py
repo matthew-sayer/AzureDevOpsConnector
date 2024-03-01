@@ -2,7 +2,6 @@ from azure.devops.connection import Connection
 from msrest.authentication import BasicAuthentication
 from azure.devops.v7_1.work_item_tracking.models import Wiql
 import pandas as pd
-import regex
 
 patToken = '<token>' #Replace <token> with your Personal Access Token (PAT) - find this in your ADO settings
 orgURL = 'https://analytics.dev.azure.com/<organisation>/' #Replace <organisation with your organisation name
