@@ -1,7 +1,7 @@
 # AzureDevOpsConnector
 A Python connector to return Work Item information across all projects within your Azure DevOps tenancy.
 
-It makes use of the Azure DevOps Python library to retrieve a list of **bug** work items for all projects within your targeted tenancy.
+It makes use of the Azure DevOps Python library to retrieve a list of **bug** work items for all projects within your targeted tenancy. You can change this using the WIQL query to return other types of work item. You can also remove that filter entirely, but there is a 20k limit on returning work items. Additionally, you can only retrieve work item info for items in batches of up to 200 (I have handled this by batching them into groups of 200 before retrieving the information for each batch.)
 
 You will need:
 1. A Personal Access Token - you can get this from your Azure DevOps tenant if you look in your settings. The account you get the token from will require access to read the work items.
